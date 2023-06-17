@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Kedua</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+  <h1>Halaman Kedua</h1>
+  
+  <h2>Form Survey</h2>
+  
+  <form id="survey-form">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="birthdate">Tanggal Lahir:</label>
+    <input type="date" id="birthdate" name="birthdate">
+    
+    <label for="generation">Angkatan:</label>
+    <select id="generation" name="generation">
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+    </select>    
+
+    <div class="item">
+        <label>Peminatan:</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="peminatan" value="Peminatan 1"> Programming
+          </label>
+          <label>
+            <input type="radio" name="peminatan" value="Peminatan 2"> Jaringan
+          </label>
+          <label>
+            <input type="radio" name="peminatan" value="Peminatan 3"> Data
+          </label>
+        </div>
+      </div>
+    
+    <label for="address">Alamat:</label>
+    <textarea id="address" name="address"></textarea>
+    
+    <label for="opinion">Pendapat:</label>
+    <textarea id="opinion" name="opinion"></textarea>
+    
+
+    <div class="button-container">
+        <input type="submit" value="Submit" class="submit-button" onclick="submitForm()">
+        <a href="index.html" class="back-button">Back</a>
+      </div>
+  </form>
+  
+  
+  <script src="survey.js"></script>
+</body>
+</html>
